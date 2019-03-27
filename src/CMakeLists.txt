@@ -1,8 +1,13 @@
-set(SOURCES
-	main.cpp
+set(HEADERS
+	test.h
 )
 
-file (GLOB HEADERS *.h)
-source_group("Header Files" FILES ${HEADERS})
+set(SOURCES
+	main.cpp
+	test.cpp
+)
+
+#file (GLOB HEADERS *.h)
+#source_group("Header Files" FILES ${HEADERS})
 
 add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS}) 
