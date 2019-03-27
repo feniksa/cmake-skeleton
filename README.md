@@ -3,7 +3,7 @@ CMake Skeleton project with custom modules
 
 For most daily puproses will be enough to run:
 
-    cmake -DCMAKE_BUILD_TYPE=debug  -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
+    cmake -G Ninja -DCMAKE_BUILD_TYPE=debug  -DCMAKE_EXPORT_COMPILE_COMMANDS=1 ..
 
 # Generate compile commands
 
