@@ -3,7 +3,21 @@ project (cmake_skeleton CXX)
 
 #option(DEBUG_OPENGL "Enable additional checks of OpenGL calls" ON)
 
-include ("${CMAKE_SOURCE_DIR}/cmake/Application.cmake")
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+#set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake")
+
+add_definitions("-fno-elide-constructors"
+                "-pedantic-errors"
+                "-Wextra"
+                "-Wall"
+                "-Winit-self"
+                "-Wold-style-cast"
+                "-Woverloaded-virtual"
+                "-Wuninitialized"
+                "-Wmissing-declarations"
+                "-Winit-self")
 
 #find_package(OpenGL REQUIRED)
 #include_directories(${OpenGL_INCLUDE_DIR})
