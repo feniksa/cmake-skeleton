@@ -10,7 +10,7 @@ set (TESTS
 foreach(test ${TESTS})
 	add_test(
 			NAME ${test}
-			COMMAND tests_main --gtest_filter=Test${test}.*
+			COMMAND ${PROJECT_NAME}_tests --gtest_filter=Test${test}.*
 			WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 		)
 		set (TEST_SOURCES ${TEST_SOURCES} Test${test}.cpp)
