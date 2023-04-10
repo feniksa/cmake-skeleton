@@ -1,0 +1,8 @@
+#pragma once
+
+#include <filesystem>
+
+namespace tests
+{
+	static const std::filesystem::path CurrentWorkingDirectory = "@CMAKE_CURRENT_BINARY_DIR@";
+}
