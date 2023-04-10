@@ -33,16 +33,15 @@ For ninja build system, run:
 
 For VS 2017, run:
 
-   cmake  -G "Visual Studio 15 2017 Win64" --config Debug -A x64 ..
+    cmake  -G "Visual Studio 15 2017 Win64" --config Debug -A x64 ..
 
 For VS 2019, run:
 
-   cmake  -G "Visual Studio 16 2019 Win64" --config Debug -A x64 ..
+    cmake  -G "Visual Studio 16 2019 Win64" --config Debug -A x64 ..
 
 For VS 2022, run:
 
-   cmake  -G "Visual Studio 17 2022 Win64" --config Debug -A x64 ..
-
+    cmake  -G "Visual Studio 17 2022 Win64" --config Debug -A x64 ..
 
 
 # Build with cmake with generator
