@@ -43,24 +43,6 @@ To build project with generator, run from command line:
 
 # vim
 
-## YouCompleteMe configuration
-
-To generate YCM configuration, run from vim
-
-    :YcmGenerateConfig
-
-Then open file `.ycm_extra_conf.py`. Move function `DirectoryOfThisScript` before
-`compilation_database_folder` variable. And modify `compilation_database_folder`.
-After all manipulations should be
-
-    ... 
-
-    def DirectoryOfThisScript():
-      return os.path.dirname( os.path.abspath( __file__ ) )
-
-    compilation_database_folder = DirectoryOfThisScript() + '/build'
-
-
 ## Reassing debug command
 
 To reassing default debug command (on F9 press), add to .vimrc
@@ -70,11 +52,11 @@ To reassing default debug command (on F9 press), add to .vimrc
     set path+=tests
 
 
-## Change build system to Ninja
+## Change build system to Make
 
 Add to .vimrc:
    
-   nnoremap <F8> :make<CR>
-   set makeprg=ninja\ -C\ build
+    nnoremap <F8> :make<CR>
+    "set makeprg=ninja\ -C\ build
 
 
